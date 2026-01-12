@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DevEngineer Portfolio | Mobile &amp; Electrical Expertise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "slate-custom": "#192633",
+                        "border-custom": "#324d67",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .circuit-bg {
+            background-image: radial-gradient(circle at 2px 2px, #137fec15 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(19, 127, 236, 0.1) 0%, rgba(16, 25, 34, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-border-custom bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto max-w-[1200px] px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="text-lg font-bold leading-none tracking-tight">DevEngineer</span>
+<span class="text-[10px] font-medium uppercase tracking-widest text-primary">Systems &amp; Software</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#expertise">Expertise</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105">
+                    Contact Me
+                </button>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="relative px-6 py-12 md:py-24 circuit-bg">
+<div class="hero-gradient absolute inset-0 pointer-events-none"></div>
+<div class="mx-auto max-w-[1200px] relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8 order-2 md:order-1">
+<div class="flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] font-bold uppercase tracking-wider text-primary">Available for Collaboration</span>
+</div>
+<h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight dark:text-white">
+                                    Crafting Digital Experiences with <span class="text-primary">Hardware Precision.</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-[#92adc9] max-w-lg leading-relaxed">
+                                    Mobile Developer &amp; Electrical Engineer bridging the gap between elegant code and robust circuitry. Specialized in full-stack IoT ecosystems.
+                                </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
+                                    View Projects
+                                </button>
+<button class="bg-slate-200 dark:bg-slate-custom text-slate-900 dark:text-white border border-slate-300 dark:border-border-custom px-8 py-4 rounded-xl font-bold text-base hover:bg-slate-300 dark:hover:bg-slate-800 transition-all">
+                                    Download CV
+                                </button>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center md:justify-end">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative w-full aspect-square max-w-[450px] overflow-hidden rounded-2xl border-4 border-white dark:border-slate-800 shadow-2xl bg-slate-100 dark:bg-slate-custom">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of a developer and engineer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnT3axmNDeXB0veaUQneAj9aZ7La9t4mXERLCBNrSoqgtzQpaO9pR3tzHytg-i-DpEfGLiUk2qCh5kn_kF1J5_KD8_FSLcwyf_73DIL1afyw4j-Qx94_QM_nmkiTXxb_mAWa86hNfR9x5e463gcoGDtm17gBYgiVMRAs3Q7lCRCVZttNv2TzWSfkJELdfknjIspjFrXSdDvwAoacqSb3IplWw4-wDWC9uiaIaSbpqmyX3ddK_zolqZmu7Ht2VghdtBalsZX4wW_A"/>
+</div>
+<!-- Tech Accents -->
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-custom p-4 rounded-xl shadow-xl border border-slate-100 dark:border-border-custom hidden lg:block">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-green-500/10 text-green-500 rounded-lg">
+<span class="material-symbols-outlined">memory</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400">PCB Design</p>
+<p class="text-sm font-black uppercase">Altium Expert</p>
+</div>
+</div>
+</div>
+<div class="absolute -top-6 -right-6 bg-white dark:bg-slate-custom p-4 rounded-xl shadow-xl border border-slate-100 dark:border-border-custom hidden lg:block">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-blue-500/10 text-blue-500 rounded-lg">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<div>
+<p class="text-xs font-bold text-slate-400">Mobile Apps</p>
+<p class="text-sm font-black uppercase">Swift &amp; Kotlin</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Expertise Section -->
+<section class="py-20 px-6 bg-white dark:bg-background-dark/50" id="expertise">
+<div class="mx-auto max-w-[1200px]">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="text-sm font-black uppercase tracking-[0.2em] text-primary mb-4">Dual Expertise</h2>
+<h3 class="text-3xl md:text-4xl font-black mb-6">Where Bits Meet Volts</h3>
+<p class="max-w-2xl text-slate-500 dark:text-[#92adc9]">
+                            Expertise spanning the entire technology stack—from the base physical layer of custom hardware to the intuitive interfaces of high-performance mobile applications.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Software Card -->
+<div class="group p-8 rounded-2xl border border-slate-200 dark:border-border-custom bg-slate-50 dark:bg-slate-custom hover:border-primary/50 transition-all duration-300">
+<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">developer_mode_tv</span>
+</div>
+<h4 class="text-2xl font-bold mb-4">Mobile Development</h4>
+<p class="text-slate-600 dark:text-[#92adc9] mb-8 leading-relaxed">
+                                Building native and cross-platform applications with a focus on fluid animations, reactive state management, and seamless cloud connectivity.
+                            </p>
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<span class="text-sm font-semibold uppercase tracking-wider opacity-60">Swift / iOS</span>
+<span class="text-xs font-mono text-primary">95%</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[95%]"></div>
+</div>
+<div class="flex justify-between items-end">
+<span class="text-sm font-semibold uppercase tracking-wider opacity-60">Kotlin / Android</span>
+<span class="text-xs font-mono text-primary">88%</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[88%]"></div>
+</div>
+</div>
+</div>
+<!-- Hardware Card -->
+<div class="group p-8 rounded-2xl border border-slate-200 dark:border-border-custom bg-slate-50 dark:bg-slate-custom hover:border-primary/50 transition-all duration-300">
+<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">fitbit_circuit_training</span>
+</div>
+<h4 class="text-2xl font-bold mb-4">Electrical Engineering</h4>
+<p class="text-slate-600 dark:text-[#92adc9] mb-8 leading-relaxed">
+                                Designing complex embedded systems, multi-layer PCBs, and implementing real-time signal processing algorithms for industrial and IoT applications.
+                            </p>
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<span class="text-sm font-semibold uppercase tracking-wider opacity-60">PCB Design (Altium)</span>
+<span class="text-xs font-mono text-primary">92%</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[92%]"></div>
+</div>
+<div class="flex justify-between items-end">
+<span class="text-sm font-semibold uppercase tracking-wider opacity-60">Firmware (C/C++)</span>
+<span class="text-xs font-mono text-primary">90%</span>
+</div>
+<div class="h-1.5 w-full bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[90%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Section -->
+<section class="py-20 px-6" id="projects">
+<div class="mx-auto max-w-[1200px]">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="flex flex-col">
+<h2 class="text-sm font-black uppercase tracking-[0.2em] text-primary mb-4">Portfolio</h2>
+<h3 class="text-3xl md:text-4xl font-black">Featured Projects</h3>
+</div>
+<a class="group inline-flex items-center gap-2 text-primary font-bold" href="#">
+                            View All Work
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Project 1 -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-custom border border-slate-200 dark:border-border-custom">
+<div class="aspect-[16/9] w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern smart home control dashboard and hardware components" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAElFsTsAjOnZDhXRkRdLRWopk308hq0Vdev7UAv_ob7zc_9AJbY6OuMk-LD4VCpseoRJgbjGVAttr2ip6GULSC3GUCzyvmg_C4IIQWb1J2AKd5fVV8Nny3-kLg0UhGGppOMJiw6MTBqmolPrNJeIbp9cHKVqesFShp2dProRCerZZg_2D8rbjawlkLquGohrZEh3DquyIhno5H9uIUl39RICcRYq5yPzAaYhxUnM7I8Lz75USJsE3vZg15YPliPUk6Rv0fqqqVhA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase rounded-full">Full Stack IoT</span>
+<span class="px-3 py-1 bg-white/10 text-white text-[10px] font-bold uppercase rounded-full">BLE 5.0</span>
+</div>
+<h4 class="text-2xl font-bold text-white mb-2">SmartMesh Home Hub</h4>
+<p class="text-slate-300 text-sm max-w-md line-clamp-2">
+                                    A distributed IoT gateway system featuring custom PCB design and a React Native management app with real-time analytics.
+                                </p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-custom border border-slate-200 dark:border-border-custom">
+<div class="h-full aspect-[4/5] md:aspect-auto w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Sleek mobile app UI for a delivery service" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_Wz_FiYhNTJz99WGxn-K2ncl1CuhfNdhhaOfPRb97ePAQ-RL1ub2bcLkqrIT1hG4LG5YmYUn5B5mXIALVdbOLQuHJGSmldZfmGglISh9zKjl-J98FDWw-X0RKZ5N67c8GHKDr0dST8RTfm0UaFjlWtjehePkhegkbjsx6CQcPytDR5_z7ZMM5TWY4wEc_uTNA-Jgo4A4fxB77-GxNZPLYDV1VE6jSXb-jGrqU1Y74wxGtvrKd3uMCiDztEpgoEz_kIF5GyIsyiw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase rounded-full">Mobile</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-2">Volt Delivery App</h4>
+<p class="text-slate-300 text-sm line-clamp-2">High-performance iOS logistics application with complex routing logic.</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-custom border border-slate-200 dark:border-border-custom">
+<div class="aspect-square w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Macro photo of a complex microchip and circuit board" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMvyOOhC7OpalWXuFi02kQ8lMx5_GUFPxDbzQBmlo8EsFPOoFy7sA-VAuCG9ZHw-kLQSn0wzABlwgqK5w1zVApwNycseyO8URKZqLcjoKYNImb59X7fV4Dy5yaXlEWuwvuXrnysppx3_OvHbOvcrd0GeVeOXpRpKCdvu1TsH184PK3O6eQ1gY7qL5vgWym_XS1hJRoI1eOc3G9Su9chyOnYAMZpCguJgSsvfYtkLFzkijvvfKrGoHEUUQvmiZJ5RnfWoVMRLwfbw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase rounded-full">Engineering</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-2">SignalPro Processor</h4>
+<p class="text-slate-300 text-sm line-clamp-2">Custom FPGA-based DSP board for high-fidelity audio analysis.</p>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-2xl bg-slate-100 dark:bg-slate-custom border border-slate-200 dark:border-border-custom">
+<div class="aspect-[21/9] w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Automated industrial assembly line with robotic arms" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVgXyZPa-5b7VxmLLD6YZJx7vBUUJLvIhjsOCScHuAIDKYJKrQ6IpC3LwdfvNlrXvcLEx_zLcHDXYKybFuNKMJzPgKh9Rf5rESabzZgIuDDVXNAC0gAXzirw0rpk-bzf-Gfw7nE51y5RV9AwjM8jBGydHYLuId01vYHEQ2qs5B84LHyw3pK32a1JdPCy0RNEoWRYA1mg6kEZrf8f3fay5vA4W2ZLvfx4KlT6oRuhIvgsq8J2JgOMvWqSoNR4ZjmyQ1awMIqQMKQg')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent flex flex-col justify-end p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase rounded-full">Industrial IoT</span>
+</div>
+<h4 class="text-2xl font-bold text-white mb-2">Autonomous Warehouse Bot</h4>
+<p class="text-slate-300 text-sm max-w-md line-clamp-2">
+                                    Development of sensory fusion logic and control systems for robotic navigation.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Skills Matrix -->
+<section class="py-20 px-6 bg-slate-50 dark:bg-slate-custom/30 border-y border-slate-200 dark:border-border-custom" id="skills">
+<div class="mx-auto max-w-[1200px]">
+<div class="text-center mb-16">
+<h2 class="text-sm font-black uppercase tracking-[0.2em] text-primary mb-4">Skills Matrix</h2>
+<h3 class="text-3xl font-black">Technical Toolkit</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div>
+<h5 class="flex items-center gap-2 font-bold mb-6 text-primary">
+<span class="material-symbols-outlined">code</span>
+                                Mobile Software
+                            </h5>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">SwiftUI</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">Jetpack Compose</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">Flutter</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">React Native</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">TypeScript</span>
+</div>
+</div>
+<div>
+<h5 class="flex items-center gap-2 font-bold mb-6 text-primary">
+<span class="material-symbols-outlined">settings_input_component</span>
+                                Hardware &amp; Design
+                            </h5>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">Altium Designer</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">KiCad</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">LTspice</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">AutoCAD</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">SolidWorks</span>
+</div>
+</div>
+<div>
+<h5 class="flex items-center gap-2 font-bold mb-6 text-primary">
+<span class="material-symbols-outlined">memory</span>
+                                Embedded Systems
+                            </h5>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">STM32 (ARM)</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">ESP32 / RTOS</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">C / Embedded C++</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">MQTT / CoAP</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">I2C / SPI / CAN</span>
+</div>
+</div>
+<div>
+<h5 class="flex items-center gap-2 font-bold mb-6 text-primary">
+<span class="material-symbols-outlined">analytics</span>
+                                Core Engineering
+                            </h5>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">MATLAB</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">Control Systems</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">Signal Processing</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">Power Electronics</span>
+<span class="px-3 py-2 rounded-lg bg-white dark:bg-slate-custom border border-slate-200 dark:border-border-custom text-sm font-medium">RF Engineering</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark px-6 py-12 border-t border-slate-200 dark:border-border-custom">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="flex h-8 w-8 items-center justify-center rounded bg-primary text-white">
+<span class="material-symbols-outlined text-sm">terminal</span>
+</div>
+<span class="text-xl font-bold tracking-tight">DevEngineer</span>
+</div>
+<p class="text-slate-500 dark:text-[#92adc9] max-w-sm mb-6 leading-relaxed">
+                            A unique fusion of software craftsmanship and electrical precision, building the future of connected devices.
+                        </p>
+<div class="flex gap-4">
+<a class="h-10 w-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-custom hover:bg-primary hover:text-white transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.412-4.041-1.412-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="h-10 w-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-custom hover:bg-primary hover:text-white transition-colors" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-lg">Stay Connected</h5>
+<p class="text-slate-500 dark:text-[#92adc9] text-sm">Join my technical newsletter for monthly insights on mobile-hardware ecosystems.</p>
+<form class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-slate-custom border-slate-200 dark:border-border-custom rounded-lg px-4 py-2 text-sm focus:ring-primary focus:border-primary" placeholder="email@example.com" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-border-custom flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 font-medium">
+<p>© 2024 DevEngineer Portfolio. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
