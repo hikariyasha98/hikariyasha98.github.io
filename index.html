@@ -1,37 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Product Designer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8b5cf6", // Electric Purple
+                        "accent": "#ff7e67", // Coral
+                        "background-light": "#ffffff",
+                        "slate-custom": "#f8fafc",
+                        "border-custom": "#e2e8f0",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .glass {
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            .hero-gradient {
+                background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 40%),
+                            radial-gradient(circle at 90% 80%, rgba(255, 126, 103, 0.05) 0%, transparent 40%);
+            }
+            .iphone-frame {
+                border: 12px solid #1a1a1a;
+                border-radius: 3rem;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="bg-background-light font-display text-slate-900 antialiased selection:bg-primary/20 selection:text-primary">
+<div class="relative flex min-h-screen flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/70 backdrop-blur-xl">
+<div class="mx-auto max-w-7xl px-6 py-5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full bg-gradient-to-tr from-primary to-accent"></div>
+<span class="text-xl font-extrabold tracking-tight">Studio.Mobile</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#work">Work</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#process">Process</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#toolkit">Toolkit</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#about">About</a>
+</nav>
+<button class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-primary transition-all shadow-lg shadow-slate-200">
+                    Start a Project
+                </button>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative px-6 pt-20 pb-32 hero-gradient overflow-hidden">
+<div class="mx-auto max-w-7xl relative">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-20">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 mb-8">
+<span class="text-[11px] font-bold uppercase tracking-[0.15em] text-primary">Mobile Product Designer</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tight text-slate-900 mb-8">
+                            Designing Intuitive <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Mobile Experiences</span>
+</h1>
+<p class="text-xl text-slate-500 max-w-2xl leading-relaxed font-light">
+                            Crafting high-fidelity interfaces and seamless user journeys for the next generation of digital products. Based in the intersection of craft and usability.
+                        </p>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-8 items-center pt-10">
+<div class="iphone-frame aspect-[9/19.5] overflow-hidden bg-slate-100 transform -rotate-6 translate-y-12 transition-transform hover:rotate-0 duration-700">
+<img alt="Mobile UI 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Wz_FiYhNTJz99WGxn-K2ncl1CuhfNdhhaOfPRb97ePAQ-RL1ub2bcLkqrIT1hG4LG5YmYUn5B5mXIALVdbOLQuHJGSmldZfmGglISh9zKjl-J98FDWw-X0RKZ5N67c8GHKDr0dST8RTfm0UaFjlWtjehePkhegkbjsx6CQcPytDR5_z7ZMM5TWY4wEc_uTNA-Jgo4A4fxB77-GxNZPLYDV1VE6jSXb-jGrqU1Y74wxGtvrKd3uMCiDztEpgoEz_kIF5GyIsyiw"/>
+</div>
+<div class="iphone-frame aspect-[9/19.5] overflow-hidden bg-slate-100 z-10 shadow-2xl scale-110">
+<img alt="Mobile UI 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAElFsTsAjOnZDhXRkRdLRWopk308hq0Vdev7UAv_ob7zc_9AJbY6OuMk-LD4VCpseoRJgbjGVAttr2ip6GULSC3GUCzyvmg_C4IIQWb1J2AKd5fVV8Nny3-kLg0UhGGppOMJiw6MTBqmolPrNJeIbp9cHKVqesFShp2dProRCerZZg_2D8rbjawlkLquGohrZEh3DquyIhno5H9uIUl39RICcRYq5yPzAaYhxUnM7I8Lz75USJsE3vZg15YPliPUk6Rv0fqqqVhA"/>
+</div>
+<div class="iphone-frame aspect-[9/19.5] overflow-hidden bg-slate-100 transform rotate-6 translate-y-12 transition-transform hover:rotate-0 duration-700">
+<img alt="Mobile UI 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVgXyZPa-5b7VxmLLD6YZJx7vBUUJLvIhjsOCScHuAIDKYJKrQ6IpC3LwdfvNlrXvcLEx_zLcHDXYKybFuNKMJzPgKh9Rf5rESabzZgIuDDVXNAC0gAXzirw0rpk-bzf-Gfw7nE51y5RV9AwjM8jBGydHYLuId01vYHEQ2qs5B84LHyw3pK32a1JdPCy0RNEoWRYA1mg6kEZrf8f3fay5vA4W2ZLvfx4KlT6oRuhIvgsq8J2JgOMvWqSoNR4ZjmyQ1awMIqQMKQg"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 bg-slate-50" id="process">
+<div class="mx-auto max-w-7xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-sm font-black uppercase tracking-[0.2em] text-accent mb-6">How I Work</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-10 leading-tight">From empathy to <br/>pixel-perfect delivery.</h3>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-none h-12 w-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined font-bold">search</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">01. Research</h4>
+<p class="text-slate-500 leading-relaxed">Diving deep into user behavior, competitor landscapes, and stakeholder goals to define the roadmap.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-none h-12 w-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined font-bold">architecture</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">02. Wireframing</h4>
+<p class="text-slate-500 leading-relaxed">Mapping out information architecture and low-fidelity flows to ensure a solid UX foundation.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-none h-12 w-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined font-bold">layers</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">03. Prototyping</h4>
+<p class="text-slate-500 leading-relaxed">Bringing designs to life with interactive prototypes that test motion and usability before build.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Designer at work" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnT3axmNDeXB0veaUQneAj9aZ7La9t4mXERLCBNrSoqgtzQpaO9pR3tzHytg-i-DpEfGLiUk2qCh5kn_kF1J5_KD8_FSLcwyf_73DIL1afyw4j-Qx94_QM_nmkiTXxb_mAWa86hNfR9x5e463gcoGDtm17gBYgiVMRAs3Q7lCRCVZttNv2TzWSfkJELdfknjIspjFrXSdDvwAoacqSb3IplWw4-wDWC9uiaIaSbpqmyX3ddK_zolqZmu7Ht2VghdtBalsZX4wW_A"/>
+</div>
+<div class="absolute -bottom-10 -left-10 glass p-8 rounded-3xl shadow-xl max-w-xs hidden xl:block">
+<p class="text-slate-800 font-medium italic">"The details are not the details. They make the design."</p>
+<p class="text-primary font-bold mt-4 text-sm">— Charles Eames</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6" id="work">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
+<div class="flex flex-col">
+<h2 class="text-sm font-black uppercase tracking-[0.2em] text-primary mb-4">Case Studies</h2>
+<h3 class="text-4xl font-extrabold text-slate-900">Selected Mobile Work</h3>
+</div>
+<a class="group inline-flex items-center gap-2 text-slate-900 font-bold border-b-2 border-slate-900 pb-1" href="#">
+                            View Archive
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-100 mb-8 relative">
+<img alt="Fintech App Design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAElFsTsAjOnZDhXRkRdLRWopk308hq0Vdev7UAv_ob7zc_9AJbY6OuMk-LD4VCpseoRJgbjGVAttr2ip6GULSC3GUCzyvmg_C4IIQWb1J2AKd5fVV8Nny3-kLg0UhGGppOMJiw6MTBqmolPrNJeIbp9cHKVqesFShp2dProRCerZZg_2D8rbjawlkLquGohrZEh3DquyIhno5H9uIUl39RICcRYq5yPzAaYhxUnM7I8Lz75USJsE3vZg15YPliPUk6Rv0fqqqVhA"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="bg-white text-slate-900 px-6 py-3 rounded-full font-bold shadow-xl">View Case Study</span>
+</div>
+</div>
+<h4 class="text-2xl font-bold mb-2">Neobank Redesign</h4>
+<p class="text-slate-500">UX Research • UI Design • iOS</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[4/3] rounded-3xl overflow-hidden bg-slate-100 mb-8 relative">
+<img alt="E-commerce Experience" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Wz_FiYhNTJz99WGxn-K2ncl1CuhfNdhhaOfPRb97ePAQ-RL1ub2bcLkqrIT1hG4LG5YmYUn5B5mXIALVdbOLQuHJGSmldZfmGglISh9zKjl-J98FDWw-X0RKZ5N67c8GHKDr0dST8RTfm0UaFjlWtjehePkhegkbjsx6CQcPytDR5_z7ZMM5TWY4wEc_uTNA-Jgo4A4fxB77-GxNZPLYDV1VE6jSXb-jGrqU1Y74wxGtvrKd3uMCiDztEpgoEz_kIF5GyIsyiw"/>
+<div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="bg-white text-slate-900 px-6 py-3 rounded-full font-bold shadow-xl">View Case Study</span>
+</div>
+</div>
+<h4 class="text-2xl font-bold mb-2">LuxeCart Commerce</h4>
+<p class="text-slate-500">Visual Identity • Mobile Strategy</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 bg-slate-900 text-white overflow-hidden relative" id="toolkit">
+<div class="mx-auto max-w-7xl relative z-10">
+<div class="flex flex-col items-center text-center mb-20">
+<h2 class="text-sm font-black uppercase tracking-[0.2em] text-primary mb-6">Expertise</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold mb-10">My Design Stack</h3>
+<p class="text-slate-400 max-w-2xl leading-relaxed">
+                            Leveraging industry-standard tools to create fluid, scalable, and developer-friendly design systems.
+                        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">token</span>
+<span class="font-bold text-sm tracking-widest uppercase">Figma</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-4xl text-accent">motion_mode</span>
+<span class="font-bold text-sm tracking-widest uppercase">Principle</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-4xl text-blue-400">code</span>
+<span class="font-bold text-sm tracking-widest uppercase">Swift</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-4xl text-yellow-400">animation</span>
+<span class="font-bold text-sm tracking-widest uppercase">Lottie</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-4xl text-purple-400">draw</span>
+<span class="font-bold text-sm tracking-widest uppercase">Illustrator</span>
+</div>
+<div class="p-8 rounded-3xl bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-4xl text-green-400">terminal</span>
+<span class="font-bold text-sm tracking-widest uppercase">Git</span>
+</div>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/20 blur-[120px] rounded-full pointer-events-none opacity-20"></div>
+</section>
+<section class="py-32 px-6">
+<div class="mx-auto max-w-5xl text-center">
+<h2 class="text-4xl md:text-6xl font-black text-slate-900 mb-10 tracking-tight">Let's build something <br/><span class="text-primary italic">extraordinary.</span></h2>
+<p class="text-xl text-slate-500 mb-12">Currently open for new product design opportunities.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-primary text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-primary/90 transition-all shadow-xl shadow-primary/20" href="mailto:hello@studio.mobile">
+                            Say Hello
+                        </a>
+<a class="bg-slate-100 text-slate-900 px-10 py-5 rounded-full font-bold text-lg hover:bg-slate-200 transition-all" href="#">
+                            View Resume
+                        </a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white px-6 py-12 border-t border-slate-100">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2">
+<div class="h-6 w-6 rounded-full bg-gradient-to-tr from-primary to-accent"></div>
+<span class="text-lg font-extrabold tracking-tight">Studio.Mobile</span>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-400 hover:text-primary transition-colors font-medium" href="#">Twitter</a>
+<a class="text-slate-400 hover:text-primary transition-colors font-medium" href="#">LinkedIn</a>
+<a class="text-slate-400 hover:text-primary transition-colors font-medium" href="#">Dribbble</a>
+<a class="text-slate-400 hover:text-primary transition-colors font-medium" href="#">Read.cv</a>
+</div>
+<p class="text-slate-400 text-sm">© 2024. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
 
-<div id="header"></div>
-<div id="hero"></div>
-<div id="about"></div>
-<div id="projects"></div>
-<div id="skills"></div>
-<div id="footer"></div>
-
-<script>
-const sections = [
-  "headers",
-  "hero",
-  "about",
-  "projects",
-  "skills",
-  "footer"
-];
-
-sections.forEach(name => {
-  fetch(`partials/${name}.html`)
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById(name).innerHTML = html;
-    });
-});
-</script>
-
-</body>
-</html>
+</body></html>
